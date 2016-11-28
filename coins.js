@@ -2,22 +2,24 @@ var amount = prompt("What is your amount?");
 
 var number = parseFloat(amount) * 100;
 
-
+var dollar;
 var quarters;
 var dimes;
 var nickles;
 var pennies;
 
-var coinPurse = {quarters, dimes, nickles, pennies}
+var coinPurse = {dollar, quarters, dimes, nickles, pennies}
 
 	
 
 function coinCounter() {
 	for (var i = 0; i <= 1; i++) {
+coinPurse.dollar = parseInt(number/100);
+var postDollar = parseInt(number%100);
 //find out how many quarters and return
-coinPurse.quarters = parseInt(number/25);
+coinPurse.quarters = parseInt(postDollar/25);
 //pass on remainder
-var postQuarter = parseInt(number%25);
+var postQuarter = parseInt(postDollar%25);
 
 //find out how many dimes and return
 coinPurse.dimes = parseInt(postQuarter/10);
