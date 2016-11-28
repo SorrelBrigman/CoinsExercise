@@ -28,7 +28,7 @@ coinPurse.nickles = parseInt(postDimes/5);
 //pass on remainder
 coinPurse.pennies = parseInt(postDimes%5);
 //find out how many pennies and return
-console.log("working?");
+
 	}
 }
 
